@@ -5,7 +5,7 @@ build/
 # User data
 *.xcworkspace
 !*.xcworkspace/contents.xcworkspacedata
-*.xcuserdata/
+**/xcuserdata/
 *.xcuserstate
 
 # Swift Package Manager
