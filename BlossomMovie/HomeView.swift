@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    var heroTestTitle = Constants.testTitleURL
+    
     let viewModel = ViewModel()
      
     var body: some View {
@@ -22,7 +22,7 @@ struct HomeView: View {
                         .frame(width: geo.size.width, height: geo.size.height)
                 case .success:
                     LazyVStack {
-                        AsyncImage(url: URL(string: heroTestTitle)){ image in
+                        AsyncImage(url: URL(string: viewModel.heroTitle.posterPath ?? "")){ image in
                             image
                                 .resizable()
                                 .scaledToFit()
